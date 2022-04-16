@@ -10,7 +10,7 @@ import {
 
 export const Header = () => {
     return (
-        <Navbar sticky="top" bg="dark" variant="dark" expand={false} >
+        <Navbar sticky="top" className="bg-black" variant="dark" expand={false} >
             <Container>
                 <Navbar.Brand href="#">Ege Oral</Navbar.Brand>
                 <Navbar.Toggle aria-controls="offcanvasNavbar" />
@@ -19,12 +19,12 @@ export const Header = () => {
                     aria-labelledby="offcanvasNavbarLabel"
                     placement="end"
                 >
-                    <Offcanvas.Header style={{backgroundColor:"#212529"}} closeButton>
+                    <Offcanvas.Header className="bg-black" closeButton>
                         <Offcanvas.Title className="text-white" id="offcanvasNavbarLabel">
                             Menu
                         </Offcanvas.Title>
                     </Offcanvas.Header>
-                    <Offcanvas.Body style={{backgroundColor:"#212529"}}>
+                    <Offcanvas.Body className="bg-black">
                         <Nav className="text-center d-flex flex-column justify-content-center h-100">
                             <Nav.Link className="text-white" href="#action1">Home</Nav.Link>
                             <Nav.Link className="text-white py-5" href="#action2">Link</Nav.Link>

@@ -1,14 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.bg-black {
+    background-color: black!important;
+}
+
 .navbar-toggler {
     border: none!important;
 }
 
+/* HERO EDITING STARTS */
+
 #hero {
-    background-image: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url('../Images/hero-1.jpg');
+    background-image: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .6)), url('../Images/hero-1.jpg');
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 #hero .container {
-    height: 50vh;
+    height: 75vh;
 }
+
+/* HERO EDITING ENDS */
+
+/* PORTFOLIO HOVER STARTS */
+
+#portfolio .portfolio-item img {
+    min-height: 100%;
+    width: 100%;
+}
+
+#portfolio .portfolio-item {
+    position: relative;
+}
+
+#portfolio .portfolio-item .overlay {
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+
+#portfolio .portfolio-item:hover .overlay {
+    opacity: .6;
+}
+
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+/* PORTFOLIO HOVER STARTS */
