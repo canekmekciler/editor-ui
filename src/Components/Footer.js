@@ -16,7 +16,7 @@ export const Footer = () => {
             <Container className="p-4 pb-0">
                 <Row className="mb-4">
                     <Col className="text-start">
-                        <h4 className="py-3">Ege Oral</h4>
+                        <h4 className="py-3">NECDET EGE ORAL</h4>
                         <h6><FontAwesomeIcon icon={faLocationDot} /> Istanbul</h6>
                         <h6 className="fw-bold">egeoral@gmail.com</h6>
                     </Col>
